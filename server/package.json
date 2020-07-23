@@ -1,0 +1,55 @@
+{
+  "name": "server-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "type": "module",
+  "scripts": {
+    "dev": "fuser -n tcp -k 3000; clear; nodemon server.js --ignore sessions",
+    "seed": "node ./seed/seeder.js",
+    "start": "clear; node server.js --experimental-modules"
+  },
+  "dependencies": {
+    "argon2": "^0.26.2",
+    "bs-stepper": "^1.7.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mailgun-js": "^0.22.0",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.19",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-instagram": "^1.0.0",
+    "passport-linkedin-oauth2": "^2.0.0",
+    "passport-oauth": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "passport-yandex": "^0.0.5",
+    "session-file-store": "^1.4.0",
+    "uuid": "^8.2.0",
+    "web-push": "^3.4.4",
+    "zeebe-node": "^0.23.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

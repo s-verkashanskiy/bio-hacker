@@ -1,0 +1,32 @@
+// .questMain {
+//   position: absolute;
+//   top: 45%;
+// }
+
+//slide animation
+
+.slide-enter {
+  left: 50%;
+  opacity: 0;
+}
+.slide-enter.slide-enter-active {
+  opacity: 1;
+  left: 50%;
+  transition: all .5s;
+}
+.slide-exit {
+  left: 50%;
+  opacity: 1;
+}
+.slide-exit.slide-exit-active {
+  left: -150%;
+  opacity: 0;
+  transition: all .5s;
+}
+
+
+
+.quiz-wrap {
+  position: relative;
+  min-height: 118vh;
+}

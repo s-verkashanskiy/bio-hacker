@@ -1,0 +1,48 @@
+.new_body { 
+  margin:50px auto;
+  width:400px;
+  border: 1px
+}
+
+/* CSS for Credit Card Payment form */
+.credit_card_box .panel_title {
+    display: inline;
+    font-size: medium;
+    font-weight: bold;
+}
+.credit_card_box .form_control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit_card_box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit_card_box .payment_errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit_card_box label {
+    display: block;
+}
+/* The old "center div vertically" hack */
+.credit_card_box .display_table {
+    display: table;
+}
+.credit_card_box .display_tr {
+    display: table-row;
+}
+.credit_card_box .display_td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+/* Just looks nicer */
+.credit_card_box .panel_heading img {
+    min-width: 180px;
+}

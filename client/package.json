@@ -1,0 +1,61 @@
+{
+  "name": "core-react-router-yelp",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "@nivo/pie": "^0.62.0",
+    "@nivo/waffle": "^0.62.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.5.0",
+    "bootstrap-icons": "^1.0.0-alpha5",
+    "date-arithmetic": "^4.1.0",
+    "moment": "^2.27.0",
+    "node-sass": "^4.14.1",
+    "rc-steps": "^4.0.1",
+    "react": "^16.13.1",
+    "react-big-calendar": "^0.26.0",
+    "react-bootstrap": "^1.1.1",
+    "react-calendar": "^3.1.0",
+    "react-chat-popup": "^1.1.2",
+    "react-date-picker": "^8.0.1",
+    "react-day-picker": "^7.4.8",
+    "react-dom": "^16.13.1",
+    "react-player": "^2.5.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-spring": "^8.0.27",
+    "react-stepper-horizontal": "^1.0.11",
+    "react-transition-group": "^4.4.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.20.3"
+  }
+}
