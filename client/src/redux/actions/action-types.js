@@ -12,3 +12,4 @@ export const SET_TELEGRAM_NAME = 'SET_TELEGRAM_NAME';
 export const SET_PUSH_INFO = 'SET_PUSH_INFO';
 export const SET_PRICE = 'SET_PRICE';
 export const STEPZERO = 'STEPZERO';
+export const SET_PHONE = 'SET_PHONE';

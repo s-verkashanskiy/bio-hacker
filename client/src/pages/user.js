@@ -1,47 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import Statistic from '../components/User/statistic';
-import Scheduler from '../components/User/scheduler';
-import Settings from '../components/Stepper/Settings';
+import Statistic from '../components/Statistics';
+import ClientChart from '../components/ClientChart';
 
 export default function () {
+  const [flag, setFlag] = useState(true)
   return (
-    <>
-    <div className="nav-scroller py-1 mb-2">
-      <div classname="nav d-flex justify-content-center">
-        <NavLink className="p-2 text-muted" to="/user/statistics">
-          Статистика
-        </NavLink>
-        <NavLink className="p-2 text-muted" to="/user/scheduler">
-          Календарь
-        </NavLink>
-        <NavLink className="p-2 text-muted" to="/user/settings">
-          Настройки
-        </NavLink>
+    <div className="container">
+      <div className="container d-flex justify-content-center row">
+        {flag ? 
+        <button onClick={()=>{setFlag(!flag)}} className="btn btn-info">Прогресс</button> :
+        <button onClick={()=>{setFlag(!flag)}} className="btn btn-info">Календарь</button>}
+        {flag ? <Statistic /> : <ClientChart />}
       </div>
     </div>
-
-
-    {/* <div className="card text-center">
-      <div className="card-header nav d-flex justify-content-center">
-        <ul className="nav nav-tabs card-header-tabs">
-          <li className="nav-item">
-            <Link className="nav-link" to="/user/statistic">Статистика</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/user/scheduler">Календарь</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link active" to="/user/settings">Настройки</Link>
-          </li>
-        </ul>
-      </div> */}
-      <div className="card">
-         <Settings />
-        {/* <p className="card-text">With supporting text below as a natural lead-in to additional content.</p> */}
-
-      </div>
-    {/* </div> */}
-    </>
   )
 }

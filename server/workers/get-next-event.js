@@ -12,6 +12,7 @@ async function handler(job, complete, worker) {
   const { nextEventTime, event } = await getNextEvent(job.variables.data.user_id);
   const shortUrl = `http://localhost:3001/course/push/${event._id}`;
   if (nextEventTime) {
+    console.log('>>>>>>>>>>>>>>>>>>>>>>', shortUrl);
     const updateToBrokerVariables = { nextEventTime, event, shortUrl };
     complete.success(updateToBrokerVariables);
   } else {
@@ -46,8 +47,7 @@ async function getNextEvent(id) {
   const currentDate = new Date();
   const course = await Course.findOne({user: id}).sort({start: 1});
   if (course) {
-    const event = course.events.find(event => new Date(event.start) > currentDate
-    && event.result == 0);
+    const event = course.events.find(event => new Date(event.start) > currentDate);
 
     const result = moment.utc(moment(currentDate.toLocaleString(),"DD/MM/YYYY HH:mm:ss")
     .diff(moment(new Date(event.start).toLocaleString(),"DD/MM/YYYY HH:mm:ss")))

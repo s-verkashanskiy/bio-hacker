@@ -14,6 +14,7 @@ import User from './pages/user';
 import ChannelSelection from './components/ChannelSelection';
 import ClientChart from './components/ClientChart';
 import Chat from './components/Chat';
+import Settings from './components/Stepper/Settings';
 
 export default function App() {
   // useSessionChecker();
@@ -38,20 +39,23 @@ export default function App() {
           <SessionRoute path="/thankYou">
             <Thankyou />
           </SessionRoute>
+          <SessionRoute path="/settings">
+            <Settings />
+          </SessionRoute>
           <SessionRoute path="/stepper">
             <Stepper />
-          </SessionRoute>
-          <SessionRoute path="/user">
-            <User />
           </SessionRoute>
           <SessionRoute path="/channel">
             <ChannelSelection />
           </SessionRoute>
-          <SessionRoute path="/schedule">
+          <SessionRoute path="/user/schedule">
             <Statistics />
           </SessionRoute>
-          <SessionRoute path="/chart">
+          <SessionRoute path="/user/chart">
             <ClientChart />
+          </SessionRoute>
+          <SessionRoute path="/user">
+            <User />
           </SessionRoute>
           <Route exact path="/">
             <Landing />

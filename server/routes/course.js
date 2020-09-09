@@ -77,7 +77,7 @@ router.get('/push/:id', async (req, res) => {
   courses.map(course => course.events.map(event => {
     if (event._id == req.params.id) {
       event.result = 1;
-      course.save().then(() => console.log(event));
+      course.save();
     }
   }));
 });

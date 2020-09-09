@@ -1,4 +1,4 @@
-import { PROGRAMADD, SET_PRICE } from '../actions/action-types';
+import { PROGRAMADD, SET_PRICE, SET_PHONE } from '../actions/action-types';
 
 export default (state = {}, action) => {
   switch (action.type) {
@@ -8,6 +8,11 @@ export default (state = {}, action) => {
       return {
         ...state,
         price: action.price,
+    }
+    case SET_PHONE:
+      return {
+        ...state,
+        phone: action.phone,
     }
     default:
       return state;

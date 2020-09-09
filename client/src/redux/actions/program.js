@@ -1,4 +1,4 @@
-import { PROGRAMADD, SET_PRICE } from './action-types';
+import { PROGRAMADD, SET_PRICE, SET_PHONE } from './action-types';
 
 export function programAdd (obj) {
   return {
@@ -12,3 +12,10 @@ export function setPrice( price) {
     price,
   }
 }
+export function setPhone(phone) {
+  return {
+    type: SET_PHONE,
+    phone,
+  }
+}
+

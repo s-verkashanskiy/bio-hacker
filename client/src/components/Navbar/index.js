@@ -22,30 +22,7 @@ export default function Nav() {
         Biohacker
       </Link>
 
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item">
-            <NavLink to="/" className="nav-link">
-              Домой
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/program">
-              Program
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/stepper">
-              Stepper
-            </NavLink>
-          </li>
-          <li>
-            <NavLink className="nav-link" to="/schedule">
-              Schedule
-            </NavLink>
-          </li>
-        </ul>
-        <form className="form-inline my-2 my-lg-0">
+      <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
           {isAuthenticated && (
             <>
               <NavLink className="btn btn-success my-2 my-sm-0" to="/user">
@@ -87,7 +64,6 @@ export default function Nav() {
               </NavLink>
             </>
           )}
-        </form>
       </div>
     </nav>
   );

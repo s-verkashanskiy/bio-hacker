@@ -25,8 +25,8 @@ export default function Stepper() {
       completeTitleColor='#757575'
       completeColor='#00006f'
       />
-      <button onClick={() => dispatch(stepMinus())}>Prev</button>
-      <button onClick={() => dispatch(stepPlus())}>Next</button>
+      {/* <button onClick={() => dispatch(stepMinus())}>Prev</button>
+      <button onClick={() => dispatch(stepPlus())}>Next</button> */}
       {step===0 && <SimpleTest/>}
       {step===1 && <Program/>}
       {step===2 && <Payment/>}

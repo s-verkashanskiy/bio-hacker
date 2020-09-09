@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setChannel, setTelegramName, setPushInfo } from '../../redux/actions/channel';
 
@@ -83,7 +83,7 @@ function ChannelSelection() {
   return (
     <>
       <div className="card-header">
-        Выберете удобный для Вас способ получения уведомлений:
+        Выберите удобный для Вас способ получения уведомлений:
       </div>
 
       <div className="card-body">
@@ -100,7 +100,7 @@ function ChannelSelection() {
             E-mail
           </label>
           { isChannel('email') &&
-            <p className="card-text"><small className="text-muted">Мы отправим вам email, пожалуйста подтвердите подписку</small></p>
+            <p className="card-text"><small className="text-muted">Мы отправим вам email, пожалуйста, подтвердите подписку</small></p>
             }
         </div>
 
@@ -140,6 +140,8 @@ function ChannelSelection() {
           
 
           { isChannel('telegram') && (
+
+
             <div className="mt-2 row w-50">
               <div className="input-group flex-nowrap col-auto">
                 <div className="input-group-prepend">
@@ -162,10 +164,9 @@ function ChannelSelection() {
               </div>
               <p className="card-text">
                 <small className="text-muted">
-                Подпишитесь, пожалуйста, на нашего бота --> t.me 
+                Подпишитесь, пожалуйста, на нашего бота --> <a href="http://t.me">t.me</a>
                 </small>
               </p>
-
             </div>
           )}
         </div>
